@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+<!--        <TextView-->
+<!--            style="@style/TextAppearance.MaterialComponents.Caption"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="You're logged in as" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/profileEmailTitle"-->
+<!--            style="@style/TextAppearance.MaterialComponents.Body1"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Email" />-->
+
+        <!--  Name  -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/profileNameTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="40dp">
+
+            <EditText
+                android:id="@+id/profileNameEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:inputType="textPersonName" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--  Last Name  -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/profileLastNameTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp">
+
+            <EditText
+                android:id="@+id/profileLastNameEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Last Name"
+                android:inputType="textPersonName" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--  Phone Number  -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/profilePhoneNumberTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp">
+
+            <EditText
+                android:id="@+id/profilePhoneNumberEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone Number"
+                android:inputType="phone" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--  Email  -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/profileEmailTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp">
+
+            <EditText
+                android:id="@+id/profileEmailEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:inputType="textEmailAddress" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--  Gender  -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/profileGenderTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp">
+
+            <EditText
+                android:id="@+id/profileGenderEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Gender"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--  Date of Birth  -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/profileDateOfBirthTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp">
+
+            <EditText
+                android:id="@+id/profileDateOfBirthEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Date of Birth"
+                android:inputType="date" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--  Country  -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/profileCountryTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp">
+
+            <EditText
+                android:id="@+id/profileCountryEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Country"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--  Province  -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/profileProvinceTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp">
+
+            <EditText
+                android:id="@+id/profileProvinceEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Province"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--  Address  -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/profileAddressTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp">
+
+            <EditText
+                android:id="@+id/profileAddressEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Address"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Logout -->
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/silver2"
+            android:text="Logout" />
+
+
+    </LinearLayout>
+</ScrollView>

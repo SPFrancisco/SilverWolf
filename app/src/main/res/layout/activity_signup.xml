@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+
+        <TextView
+            android:id="@+id/titleLabelSignUp"
+            style="@style/TextAppearance.MaterialComponents.Headline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Sign Up" />
+
+        <TextView
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titleLabelSignUp"
+            android:layout_centerHorizontal="true"
+            android:text="Create your account" />
+
+        <!--  Name  -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/signUpNameTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titleLabelSignUp"
+            android:layout_marginTop="40dp">
+
+            <EditText
+                android:id="@+id/signUpNameEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:inputType="textPersonName" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--  Last Name  -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/signUpLastNameTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/signUpNameTitle"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/signUpLastNameEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Last Name"
+                android:inputType="textPersonName" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--  Phone Number  -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/signUpPhoneNumberTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/signUpLastNameTitle"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/signUpPhoneNumberEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone Number"
+                android:inputType="phone" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--  Email  -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/signUpEmailTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/signUpPhoneNumberTitle"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/signUpEmailEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:inputType="textEmailAddress" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--  Gender  -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/signUpGenderTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/signUpEmailTitle"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/signUpGenderEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Gender"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--  Date of Birth  -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/signUpDateOfBirthTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/signUpGenderTitle"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/signUpDateOfBirthEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Date of Birth"
+                android:inputType="date" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--  Country  -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/signUpCountryTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/signUpDateOfBirthTitle"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/signUpCountryEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Country"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--  Province  -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/signUpProvinceTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/signUpCountryTitle"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/signUpProvinceEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Province"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--  Address  -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/signUpAddressTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/signUpProvinceTitle"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/signUpAddressEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Address"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--  Password  -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/signUpPasswordTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/signUpAddressTitle"
+            android:layout_marginTop="10dp"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/signUpPasswordEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--  Re-Password  -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/signUpRePasswordTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/signUpPasswordTitle"
+            android:layout_marginTop="10dp"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/signUpRePasswordEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Confirm Password"
+                android:inputType="textPassword" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--  SignUp button  -->
+        <Button
+            android:id="@+id/btn_signUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/signUpRePasswordTitle"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="0dp"
+            android:background="@color/silver2"
+            android:text="Sign Up" />
+
+        <!--  Already have an account? Login  -->
+        <EditText
+            android:id="@+id/alreadyAccount"
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_signUp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:padding="5dp"
+            android:text="@string/already_account_login" />
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "431798160927",
+    "project_id": "silver-wolf-3166e",
+    "storage_bucket": "silver-wolf-3166e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:431798160927:android:e673bca97c5d9b74be0f2a",
+        "android_client_info": {
+          "package_name": "com.example.silverwolf"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "431798160927-q7e68giutru5kdc0gkmlfnqb4v3s45ud.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.silverwolf",
+            "certificate_hash": "e7cba6f5e466ef719d55e8d6631195fa6cb67d34"
+          }
+        },
+        {
+          "client_id": "431798160927-n21bctqdbfcrpltp1rd08ensava0nbs6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3xx_tfpIWYPLZuSYk4KUn1_iY2AGugt8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "431798160927-n21bctqdbfcrpltp1rd08ensava0nbs6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
